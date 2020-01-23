@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-echo validate data-service-lifecycle
+echo validate service code style guidelines
 
 mvn git-code-format:validate-code-format
