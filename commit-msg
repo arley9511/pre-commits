@@ -35,14 +35,14 @@ if [ -z "$MESSAGE_CHECK" ]; then
   echo "  demo (demo)"
   echo "  docs (docs-name)"
   echo "  breaking (breaking-change)"
-  echo "  revert (revert-change)${NC}"
+  printf "  revert (revert-change)${NC}"
   exit 1
 fi
 
 if ! [[ "$MESSAGE" =~ $commit_regex ]]; then
   printf "${RED}Your commit message must end with the following\n${YELLOW}"
-  echo "(A20-****)"
-  echo "Where is the JIRA ID?${NC}"
+  echo "  (A20-****)"
+  printf "  Where is the JIRA ID?${NC}"
   exit 1
 fi
 
