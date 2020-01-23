@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo validate data-service-lifecycle
+
+mvn git-code-format:validate-code-format
